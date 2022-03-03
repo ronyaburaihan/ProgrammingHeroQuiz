@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProgrammingHeroQuiz</string>
+    <string name="please_wait">Please wait</string>
+    <string name="app_icon">App Icon</string>
+    <string name="quiz">Quiz</string>
+    <string name="highscore">Highscore</string>
+    <string name="_500_point">500 Point</string>
+    <string name="start">Start</string>
+    <string name="question_0_0">Question:0/0</string>
+    <string name="score_0">Score:0</string>
+    <string name="_100_point">100 Point</string>
+    <string name="question_image">Question Image</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="saved_high_score_key">highscore</string>
+</resources>

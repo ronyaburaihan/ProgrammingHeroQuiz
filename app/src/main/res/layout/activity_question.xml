@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    tools:context=".ui.QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/tv_question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_0_0"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_current_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score_0"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_question_no"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:max="1000" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_100_point"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/question_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/question_image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_100_point"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/default_button_background"
+            android:includeFontPadding="false"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button_background"
+            android:includeFontPadding="false"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button_background"
+            android:includeFontPadding="false"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button_background"
+            android:includeFontPadding="false"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:text="@string/back_to_home"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
